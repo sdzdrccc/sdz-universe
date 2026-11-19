@@ -1,0 +1,39 @@
+# 桌面版构建：推 tag 自动出 NSIS 安装包 → GitHub Releases
+name: Tauri Build
+
+on:
+  push:
+    tags: ['v*']
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: windows-latest
+    strategy:
+      matrix:
+        target: [x86_64-pc-windows-msvc]
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install Rust stable
+        run: |
+          if (!(Get-Command rustc -ErrorAction SilentlyContinue)) {
+            winget install --accept-source-agreements --accept-package-agreements Rustlang.Rustup
+            $env:Path += ";$env:USERPROFILE\.cargo\bin"
+          }
+
+      - name: Rustup target
+        run: rustup target add ${{ matrix.target }}
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Build
+        run: npx tauri build --target ${{ matrix.target }}
+
+      - name: Release
+        uses: softprops/action-gh-release@v2
+        with:
+          files: |
+            src-tauri/target/${{ matrix.target }}/release/bundle/nsis/*.exe
+        fail_on_unmatched glob: false

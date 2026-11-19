@@ -1,0 +1,28 @@
+{
+  "name": "sdz-universe",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "description": "SDZ Universe — 个人收藏工作台（书籍/动漫/小说/游戏/应用/大模型），Tauri + Vue 3 + Rust + SQLite，同一份前端可发布 GitHub Pages 只读网页版",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "build:pages": "vite build --base=/sdz-universe/",
+    "preview": "vite preview",
+    "typecheck": "vue-tsc --noEmit",
+    "tauri": "tauri"
+  },
+  "dependencies": {
+    "@tauri-apps/api": "^2.5.0",
+    "vue": "^3.5.13",
+    "vue-router": "^4.5.0"
+  },
+  "devDependencies": {
+    "@tauri-apps/cli": "^2.5.0",
+    "@types/node": "^22.10.0",
+    "@vitejs/plugin-vue": "^5.2.1",
+    "typescript": "~5.8.3",
+    "vite": "^6.3.5",
+    "vue-tsc": "^2.2.0"
+  }
+}
