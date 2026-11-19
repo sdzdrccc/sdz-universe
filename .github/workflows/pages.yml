@@ -46,6 +46,3 @@ jobs:
     steps:
       - id: deployment
         uses: actions/deploy-pages@v4
-        with:
-          # 网页版使用 hash 路由，无需 rewrite；纯静态直接可访问
-          route: /
