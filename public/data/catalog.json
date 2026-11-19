@@ -1,4 +1,4 @@
-[
+﻿[
   {
     "id": "anime-one-piece",
     "category": "anime",
@@ -22,7 +22,7 @@
     "meta": "OLM · 东京电视台 · 共276集",
     "tags": ["冒险", "精灵", "童年", "经典"],
     "description": "宝可梦系列动画第 1 作，1997 年 4 月 1 日起在东京电视台播出。10 岁的小智为成为宝可梦大师踏上旅途，与小霞、小刚、皮卡丘一起穿越关都、橘子群岛与城都地区。",
-    "poster": "posters/pkmn.png",
+    "poster": "posters/pkmn.jpg",
     "link": "https://www.pokemon.co.jp/",
     "linkLabel": "宝可梦官网",
     "favorite": 0
@@ -104,7 +104,7 @@
     "meta": "网易 · 武侠开放世界 MMORPG",
     "tags": ["武侠", "开放世界", "MMORPG", "国风"],
     "description": "网易旗舰级武侠开放世界手游，2023 年 6 月 30 日全平台公测。北宋末年背景、百万字剧情、赛季制玩法与自由武学体系，移动端与 PC 桌面版双端互通。",
-    "poster": "posters/nsh.png",
+    "poster": "posters/nsh.jpg",
     "link": "https://h.163.com/",
     "linkLabel": "逆水寒手游官网",
     "favorite": 0
@@ -118,7 +118,7 @@
     "meta": "完美世界 · 虚幻引擎 · 仙诡修真 MMORPG",
     "tags": ["仙侠", "MMORPG", "虚幻引擎", "诛仙IP"],
     "description": "诛仙 IP 全新旗舰续作，背景设定在原著一千年后：六境四族、无限免费转职、三院玩法体系（仙修/仙枢/仙羽），道具自由交易解绑，2025 年 8 月 7 日全平台公测。",
-    "poster": "posters/zx2.png",
+    "poster": "posters/zx2.jpg",
     "link": "https://zx2.wanmei.com/",
     "linkLabel": "诛仙2官网",
     "favorite": 0
@@ -160,7 +160,7 @@
     "meta": "腾讯天美 · 开放世界多人冒险",
     "tags": ["开放世界", "王者IP", "共鸣战斗", "多端"],
     "description": "王者荣耀 IP 的开放世界 RPG，以稷下学宫为舞台，结识西施、东方曜、王昭君等英雄并推进各自独立叙事线。核心「共鸣机制」可携带两名英雄实时切换，PC 与移动端数据互通。",
-    "poster": "posters/wzryssj.png",
+    "poster": "posters/wzryssj.jpg",
     "link": "https://world.qq.com/",
     "linkLabel": "王者荣耀世界官网",
     "favorite": 0
