@@ -11,6 +11,9 @@ import { seedItems } from '../data/seed'
  */
 
 const LS_KEY = 'sdz-universe:overrides:v1'
+// 部署站点前缀：dev 为 '/'，GitHub Pages 构建为 '/sdz-universe/'（由 vite --base 决定）
+const BASE = (import.meta as any).env?.BASE_URL || '/'
+// 可选的自定义远端数据源（默认用站点相对路径，无需配置）
 const REMOTE_BASE = (import.meta as any).env?.VITE_DATA_BASE_URL as string | undefined
 
 export const webData: DataAPI = {
@@ -103,17 +106,18 @@ let cached: CatalogItem[] | null = null
 async function fetchAllItems(): Promise<CatalogItem[]> {
   if (cached) return cached
   let base: CatalogItem[] = []
-  if (REMOTE_BASE) {
-    try {
-      const url = `${REMOTE_BASE.replace(/\/$/, '')}/data/catalog.json`
-      const res = await fetch(url, { cache: 'no-cache' })
-      if (res.ok) {
-        const json = (await res.json()) as CatalogItem[]
-        if (Array.isArray(json)) base = json
-      }
-    } catch {
-      /* remote unavailable: fall back to inlined seed */
+  try {
+    // 优先自定义远端源；否则按站点部署前缀取相对路径（dev=/data，Pages=/sdz-universe/data）
+    const url = REMOTE_BASE
+      ? `${REMOTE_BASE.replace(/\/$/, '')}/data/catalog.json`
+      : `${BASE.replace(/\/$/, '')}/data/catalog.json`
+    const res = await fetch(url, { cache: 'no-cache' })
+    if (res.ok) {
+      const json = (await res.json()) as CatalogItem[]
+      if (Array.isArray(json)) base = json
     }
+  } catch {
+    /* remote unavailable: fall back to inlined seed */
   }
   if (base.length === 0) base = seedItems()
   const o = readOverrides()
