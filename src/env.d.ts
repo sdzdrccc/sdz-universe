@@ -9,6 +9,8 @@ declare module '*.vue' {
 declare global {
   interface Window {
     __TAURI__?: unknown
+    __TAURI_INTERNALS__?: unknown
+    __TAURI_INVOKE__?: (...args: unknown[]) => Promise<unknown>
   }
 }
 

@@ -2,7 +2,8 @@ import { invoke } from '@tauri-apps/api/core'
 import type { CatalogItem, CategoryKey, CategoryStats } from '../types'
 
 export function isTauri(): boolean {
-  return typeof window !== 'undefined' && '__TAURI__' in window
+  // Tauri v2 注入 __TAURI_INTERNALS__ / __TAURI_INVOKE__（v1 才是 __TAURI__）
+  return typeof window !== 'undefined' && ('__TAURI_INTERNALS__' in window || '__TAURI_INVOKE__' in window)
 }
 
 export interface SearchFilter {
