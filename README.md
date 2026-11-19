@@ -1,7 +1,6 @@
 # SDZ Universe — 个人收藏工作台
 
 > 书籍 · 动漫 · 小说 · 游戏 · 应用 · 大模型，卡片墙式浏览与个人收藏管理。
-> 参考 [catyi.top/games](https://catyi.top/games) 的海报墙卡片风格。
 
 ## 技术栈
 
@@ -98,7 +97,8 @@ items(
 )
 ```
 
-## 参考
+## 数据维护
 
-- 交互风格参考：[catyi.top/games](https://catyi.top/games)（海报卡片 + 详情弹窗）
-- 技术路线参考：`应用收藏工作台-技术方案.md` 中方案 C（Tauri）+ 4.1（Pages 只读版）
+- 网页版基线数据：编辑 `public/data/catalog.json`（空数组即可，条目格式见 `src/types.ts`）
+- 桌面版：数据存 SQLite（`%APPDATA%\com.sdz.universe\sdz-universe.db`），可在分类页"导入/导出 JSON"管理
+- 技术路线说明见：`应用收藏工作台-技术方案.md` 中方案 C（Tauri）+ 4.1（Pages 只读版）
