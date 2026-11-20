@@ -1,4 +1,4 @@
-﻿[
+[
   {
     "id": "anime-one-piece",
     "category": "anime",
@@ -219,6 +219,107 @@
     "poster": "posters/ghell.jpg",
     "link": "https://store.steampowered.com/app/815370/Green_Hell/",
     "linkLabel": "Steam · Green Hell",
+    "favorite": 0
+  },
+  {
+    "id": "app-mangodisk",
+    "category": "apps",
+    "name": "MangoDisk",
+    "original": "芒果磁盘清理",
+    "meta": "harry0703 · 开源 GPLv3 · macOS/Windows/Linux",
+    "tags": ["磁盘清理", "系统工具", "开源", "跨平台"],
+    "description": "免费开源的深度磁盘清理工具：扫描系统、应用、浏览器与开发环境中的缓存/日志/构建产物，Treemap 磁盘空间可视化，按内容查重复文件，应用完整卸载，启动项管理。全程本地处理、无需注册登录，断网也能用。",
+    "link": "https://github.com/harry0703/MangoDisk",
+    "linkLabel": "GitHub · MangoDisk（官网 mangodisk.app）",
+    "favorite": 0
+  },
+  {
+    "id": "app-winhance",
+    "category": "apps",
+    "name": "WinHance",
+    "original": "Windows 增强工具箱",
+    "meta": "qais-mle7y · 开源 C# · Windows 10/11",
+    "tags": ["系统增强", "去臃肿", "开源"],
+    "description": "面向 Windows 10/11 的图形化系统增强与优化工具箱：一键去臃肿（移除预装软件与无用功能）、启动项与隐私设置管理、性能优化。无捆绑无广告，GitHub 星标近 9000，持续活跃。",
+    "link": "https://github.com/qais-mle7y/Winhance",
+    "linkLabel": "GitHub · WinHance",
+    "favorite": 0
+  },
+  {
+    "id": "app-tubatool",
+    "category": "apps",
+    "name": "图吧工具箱",
+    "original": "Tuba Toolbox",
+    "meta": "tbtool.cn · 开源 · 120+ 硬件检测工具",
+    "tags": ["硬件检测", "装机", "绿色便携"],
+    "description": "DIY 爱好者与二手验机的必备工具合集：集成 CPU-Z、AIDA64、CrystalDiskInfo、FurMark、HWiNFO 等 120+ 款检测/烤机/评分工具。开源、免费、绿色解压即用，不写注册表、无捆绑。WinUI 3 重构版在 GitHub 维护（星标 6000+）。",
+    "link": "https://www.tbtool.cn/",
+    "linkLabel": "图吧工具箱官网（GitHub：luolangaga/tubatool）",
+    "favorite": 0
+  },
+  {
+    "id": "app-obsidian",
+    "category": "apps",
+    "name": "Obsidian",
+    "original": "本地优先 Markdown 知识库",
+    "year": 2020,
+    "meta": "Obsidian.md · 本地优先 · 免费 + 核心开源",
+    "tags": ["笔记", "知识管理", "Markdown", "双向链接"],
+    "description": "本地 Markdown 文件 + 双向链接 + 关系图谱的知识库。数据完全存在自己手里（纯文本文件），插件生态丰富，支持闪念笔记、日记、任务管理，适合构建第二大脑。",
+    "link": "https://obsidian.md",
+    "linkLabel": "Obsidian 官网",
+    "favorite": 0
+  },
+  {
+    "id": "app-dbeaver",
+    "category": "apps",
+    "name": "DBeaver",
+    "original": "通用数据库工具 / SQL 客户端",
+    "year": 2010,
+    "meta": "JBeaver · 开源 Apache-2.0 · GitHub 52k stars",
+    "tags": ["数据库", "SQL", "开源", "开发工具"],
+    "description": "免费开源的通用数据库管理工具，Navicat 的主流平替。支持 MySQL、PostgreSQL、Oracle、SQL Server、SQLite 等 40+ 种 JDBC 兼容数据库：图形化表结构浏览、SQL 编辑执行、数据导入导出、ERD 图。社区版功能完整。",
+    "link": "https://github.com/dbeaver/dbeaver",
+    "linkLabel": "GitHub · DBeaver（官网 dbeaver.io）",
+    "favorite": 0
+  },
+  {
+    "id": "app-redis-desktop-manager",
+    "category": "apps",
+    "name": "Redis Desktop Manager",
+    "original": "RESP.app",
+    "year": 2015,
+    "meta": "redis · 跨平台 Redis 图形客户端 · GitHub 23k stars",
+    "tags": ["Redis", "数据库客户端", "GUI"],
+    "description": "官方 Redis 图形化管理客户端（现名 RESP.app）：键值树浏览、键 CRUD、命令行执行，支持 SSH 隧道与 SSL。社区免费平替 Another Redis Desktop Manager（qishibo，Electron 版）在国内开发者中同样流行。",
+    "link": "https://github.com/redis/RedisDesktopManager",
+    "linkLabel": "GitHub · RedisDesktopManager（官网 resp.app）",
+    "favorite": 0
+  },
+  {
+    "id": "app-vscode",
+    "category": "apps",
+    "name": "VS Code",
+    "original": "Visual Studio Code",
+    "year": 2015,
+    "meta": "Microsoft · 开源 MIT · 全球最流行的代码编辑器",
+    "tags": ["代码编辑器", "开发工具", "开源"],
+    "description": "微软出品的开源代码编辑器（MIT 协议），内置 Git、终端、调试器，插件生态庞大，支持几乎所有主流语言与框架。桌面与网页版、SSH/远程开发全覆盖，开发者事实上的标准配置。",
+    "link": "https://code.visualstudio.com",
+    "linkLabel": "VS Code 官网（GitHub：microsoft/vscode）",
+    "favorite": 0
+  },
+  {
+    "id": "app-alipan",
+    "category": "apps",
+    "name": "阿里云盘",
+    "original": "Alipan",
+    "year": 2021,
+    "meta": "阿里巴巴 · 云存储 · alipan.com",
+    "tags": ["网盘", "云存储", "阿里系"],
+    "description": "阿里云推出的云存储服务，2021 年 8 月发布。传输速度快、不限速、无套娃会员体系，免费 100GB 容量，Windows / macOS / iOS / Android 全端客户端。",
+    "link": "https://www.alipan.com",
+    "linkLabel": "阿里云盘官网",
     "favorite": 0
   }
 ]
